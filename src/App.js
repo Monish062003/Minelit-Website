@@ -3,6 +3,7 @@ import Footer from './components/Footer';
 import Generate from './components/GenerationsPage';
 import Login from './components/Login';
 import Nav1 from './components/Nav1';
+import Dashboard from './components/Dashboard';
 import Signup1 from './components/Signup1';
 import Signup2 from './components/Signup2';
 import Signup3 from './components/Signup3';
@@ -13,7 +14,7 @@ function App() {
     <>
      <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Nav1/>}></Route>
+        <Route path="/" element={<Dashboard/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/signup1" element={<Signup1/>}></Route>
         <Route path="/signup2" element={<Signup2/>}></Route>
