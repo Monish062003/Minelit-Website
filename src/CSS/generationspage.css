@@ -68,14 +68,96 @@ input[type="text"] {
   height: fit-content;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-family: "Montserrat", sans-serif;
   margin-top: 2%;
 }
 .gen_btn {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  padding: 0 6.8% 0 0;
+  justify-content: center;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+.gen_btn_sub {
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+  font-family: "Montserrat", sans-serif;
+}
+.inp_text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+.labels {
+  font-size: 25px;
+  font-family: normal;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  padding: 2px;
+  width: 18%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inp_check {
+  font-family: "Montserrat", sans-serif;
+  width: 18px;
+  height: 18px;
+  color: #214ea6;
+  background-color: #214ea6;
+}
+.number_select {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+.select-inputs {
+  font-family: "Montserrat", sans-serif;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.list_checkbox_li {
+  width: 20%;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+input[type="radio"] {
+  box-sizing: border-box;
+  appearance: none;
+  background: white;
+  outline: 2px solid #214ea6;
+  border: 1px solid #214ea6;
+  border-radius: 1px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  box-sizing: border-box;
+  background: #fff;
+  outline: 2px solid #214ea6;
+  /* border: 1px solid #214ea6; */
+  width: 16px;
+  height: 16px;
+  background-image: url(../Images/checkbox.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px 22px;
+}
+input[type="radio"]:focus{
+  outline: 2px solid #214ea6;
 }
 .img-thumbnail {
   border: none;
@@ -89,6 +171,7 @@ input[type="text"] {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  margin-right: 5%;
 }
 .promp {
   width: 60%;
@@ -156,7 +239,7 @@ input[type="text"] {
     width: 50%;
   }
   .gen_btn {
-    padding: 0 10% 0 0;
+    padding: 0 0% 0 3%;
   }
   .promp {
     width: 70%;
@@ -166,6 +249,15 @@ input[type="text"] {
   }
   .box1,
   .box2 {
+    font-size: 18px;
+  }
+  .gen_btn_sub {
+    width: 100%;
+  }
+  .inp_text {
+    font-size: 20px;
+  }
+  .list_checkbox_li {
     font-size: 18px;
   }
 }
@@ -187,7 +279,7 @@ input[type="text"] {
     font-size: 30px;
   }
   .gen_btn {
-    padding: 0 13% 0 0;
+    padding: 0 0% 0 3%;
   }
   .generate_btn {
     width: 150px;
@@ -197,6 +289,9 @@ input[type="text"] {
   }
   .img_cont {
     width: 50%;
+  }
+  .inp_text {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 426px) {
@@ -235,7 +330,20 @@ input[type="text"] {
   }
   .gen_btn {
     justify-content: center;
-    margin-left: 13%;
+    padding: 0;
+  }
+  .gen_btn_sub {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+    margin: 0;
+    padding: 0;
+  }
+  .select-inputs {
+    width: 100%;
   }
   .promp {
     display: none;
@@ -272,29 +380,51 @@ input[type="text"] {
   }
 }
 @media screen and (max-width: 376px) {
-  .box1,.box2{
+  .box1,
+  .box2 {
     width: 70%;
+  }
+  .inp_text {
+    font-size: 20px;
+  }
+  .gen_btn_sub {
+    width: 95%;
   }
 }
 @media screen and (max-width: 320px) {
   input[type="text"] {
     font-size: 20px;
   }
-  input::placeholder{
+  input::placeholder {
     font-size: 20px;
     padding: 5%;
   }
   .selector {
-    width: 200px;
-    background-color: red;
+    width: 180px;
+    height: 50px;
   }
-  .generate_btn{
-    width: 200px;
+  .generate_btn {
+    width: 180px;
+    height: 50px;
   }
-  .box1,.box2{
+  .box1,
+  .box2 {
     width: 80%;
   }
   .buttons_gen {
     margin-top: 10%;
+  }
+  .inp_text {
+    font-size: 17px;
+  }
+  .gen_btn_sub {
+    margin-top: 5%;
+  }
+  .dallebtn {
+    width: 180px;
+    height: 50px;
+  }
+  .down {
+    height: 50px;
   }
 }

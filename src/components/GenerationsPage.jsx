@@ -22,7 +22,20 @@ const GenerationsPage = () => {
                 </div>
 
                 <div className="display_images">
-                    <div className="gen_btn"><button className="generate_btn">Generate</button></div>
+                    <div className="gen_btn">
+                        <div className="gen_btn_sub">
+                            <div className="number_select">
+                                <p className="inp_text">Number of images to generate</p>
+                                <ul className="select-inputs">
+                                    <li className="list_checkbox_li">1 <input type="radio" name="Radio" value="1" className="inp_check" /></li>
+                                    <li className="list_checkbox_li">2 <input type="radio" name="Radio" value="2" className="inp_check" /></li>
+                                    <li className="list_checkbox_li">3 <input type="radio" name="Radio" value="3" className="inp_check" /></li>
+                                    <li className="list_checkbox_li">4 <input type="radio" name="Radio" value="4" className="inp_check" /></li>
+                                </ul>
+                            </div>
+                            <button className="generate_btn">Generate</button>
+                        </div>
+                    </div>
                     <div className="promp">Prompt: A Football with Pink Background in the Space</div>
 
                     <div class="row images">
