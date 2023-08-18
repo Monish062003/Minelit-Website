@@ -1,0 +1,247 @@
+.profile {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+    background: linear-gradient(180deg, rgba(208, 209, 211, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+
+.name {
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 1%;
+    margin: 0;
+}
+
+.username {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0;
+    margin-top: -10px;
+}
+
+.ellipse {
+    width: 140px;
+    height: 140px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.edit-btn {
+    margin-top: 1%;
+    background-color: #214ea6;
+    color: #fff;
+    width: 160px;
+    height: 40px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+.hidden {
+    display: none;
+}
+
+span {
+    color: #214ea6;
+    cursor: pointer;
+}
+
+.btn {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    border: 3px dashed rgba(0, 0, 0, 0.15);
+    box-shadow: 8.940000534057617px 5.960000038146973px 35.76000213623047px -8.940000534057617px rgba(0, 0, 0, 0.2);
+}
+
+.btn1 {
+    margin-right: 4%;
+}
+
+.btn2 {
+    margin-left: 4%;
+}
+
+.upload-file {
+    width: 25px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.images-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    margin-bottom: 5%;
+    margin-top: 0%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.column {
+    flex: 30%;
+    max-width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-mid {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .images-bottom {
+        margin-top: 3%;
+    }
+    .column {
+        flex: 30%;
+        max-width: 25%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 45%;
+        max-width: 45%;
+    }
+
+    .column-mid {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 40%;
+        max-width: 60%;
+    }
+    .btn {
+        width: 300px;
+        height: 150px;
+        font-size: 16px;
+    }
+    .buttons{
+        margin-top: 5%;
+    }
+}
+@media screen and (max-width:768px) {
+    .btn {
+        width: 300px;
+    }
+
+    .btn1 {
+        margin-right: 3%;
+    }
+
+    .btn2 {
+        margin-left: 3%;
+    }
+
+    .img-div {
+        width: 190px;
+        height: 190px;
+    }
+}
+@media screen and (max-width:425px){
+    .ellipse {
+        width: 120px;
+        height: 120px;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    .name {
+        font-size: 25px;
+    }
+    .username{
+        font-size: 18px;
+    }
+    .profile {
+        padding-top: 10%;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    .btn1 {
+        margin-right: 0%;
+    }
+    .btn2 {
+        margin-top: 7%;
+    }
+    .column {
+        flex: 100%;
+        max-width: 70%;
+    }
+    .img-div {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:375px){
+    .column {
+        flex: 100%;
+        max-width: 80%;
+    }
+    .btn {
+        width: 300px;
+        height: 150px;
+    }
+}
+@media screen and (max-width:320px){
+    .column {
+        flex: 100%;
+        max-width: 90%;
+    }
+    .btn {
+        width: 250px;
+    }
+}
