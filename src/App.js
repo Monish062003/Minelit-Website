@@ -9,6 +9,8 @@ import Signup1 from './components/Signup1';
 import Signup2 from './components/Signup2';
 import Signup3 from './components/Signup3';
 import Forgot from './components/Forgot';
+import ForgotPassword from './components/ForgotPassword';
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
         <Route path="/forgot" element={<Forgot/>}></Route>
         <Route path="/footer" element={<Footer/>}></Route>
         <Route path="/generate" element={<Generate/>}></Route>
+        <Route path="/forgotpassword" element={<ForgotPassword/>}></Route>
         <Route path="*" element={<h1>Error Finding This Page</h1>}></Route>
       </Routes>
     </BrowserRouter>

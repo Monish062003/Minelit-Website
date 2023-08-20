@@ -1,5 +1,5 @@
 import React from "react";
-import '../CSS/Footer.css';
+import '../CSS/footer.css';
 import img1 from '../Images/ai.png'
 import img2 from '../Images/logo.png'
 
