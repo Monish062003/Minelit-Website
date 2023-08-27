@@ -10,9 +10,9 @@ const Nav2 = () => {
             <nav>
                 <div className="navigation">
                     <div className="left_nav">
-                        <a href="/"> <img src={logo} className="logo_img" /></a>
+                        <a href="/home"> <img src={logo} className="logo_img" /></a>
                         <ul className="list list1">
-                            <li><NavLink className='nav-link' to='/'>Home</NavLink></li>
+                            <li><NavLink className='nav-link' to='/home'>Home</NavLink></li>
                             <li><NavLink className='nav-link' to='/generate'>Generate</NavLink></li>
                             <li><NavLink className='nav-link' to='/pricing'>Pricing</NavLink></li>
                         </ul>
@@ -27,7 +27,7 @@ const Nav2 = () => {
                 </div>
                 <div className="menu-display" style={{ display: showNav ? 'flex' : 'none' }}>
                     <ul className="menu-list">
-                        <li><NavLink className='nav-link' onClick={() => { setNav(false) }} to='/'>Home</NavLink></li>
+                        <li><NavLink className='nav-link' onClick={() => { setNav(false) }} to='/home'>Home</NavLink></li>
                         <li><NavLink className='nav-link' onClick={() => { setNav(false) }} to='/generate'>Generate</NavLink></li>
                         <li><NavLink className='nav-link' onClick={() => { setNav(false) }} to='/pricing'>Pricing</NavLink></li>
                         <li><NavLink className='nav-link' onClick={() => { setNav(false) }} to='/login'>Login</NavLink></li>
