@@ -11,6 +11,7 @@ import Signup2 from './components/Signup2';
 import Signup3 from './components/Signup3';
 import Forgot from './components/Forgot';
 import Mail from './components/Mail';
+import ForgotPassword from './components/ForgotPassword';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Reset from './components/Reset';
 import { HashRouter } from 'react-router-dom'
@@ -19,7 +20,6 @@ function App() {
   return (
     <>
     <HashRouter>
-     {/* <BrowserRouter> */}
       <Routes>
         <Route path="/" element={<Start/>}></Route>
         <Route path="/home" element={<Home/>}></Route>
@@ -33,8 +33,9 @@ function App() {
         <Route path="/email" element={<Mail/>}></Route>
         <Route path="/reset" element={<Reset/>}></Route>
         <Route path="/*" element={<h1>Error Finding This Page</h1>}></Route>
+        <Route path="/forgotpassword" element={<ForgotPassword/>}></Route>
+        <Route path="*" element={<h1>Error Finding This Page</h1>}></Route>
       </Routes>
-    {/* </BrowserRouter> */}
     </HashRouter>
     </>
   );

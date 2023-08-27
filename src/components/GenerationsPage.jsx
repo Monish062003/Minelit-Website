@@ -1,11 +1,25 @@
-import React from "react";
+import React,{useState} from "react";
 import '../CSS/generationspage.css'
 import img1 from '../Images/down (1).png'
 import img3 from '../Images/football.jpg'
 import Nav1 from "./Nav1";
 
 const GenerationsPage = () => {
+    const backend=require("../backend/dalle");
+    const[input,newinput]=useState("");
+    let redirect_dalle=(()=>{
+        try {
+            let imagecount=document.querySelector('input[type="radio"]:checked').value;
+            backend.dalle(input,parseInt(imagecount));
+        }
+        catch{
+            alert("Please select atleast 1 checkbox")
+        }
+    });
 
+    let changeinput=((e)=>{
+        newinput(e.target.value);
+    });
     return (
         <>
             <Nav1 />
@@ -13,7 +27,7 @@ const GenerationsPage = () => {
 
                 <div class="input-container">
                     <div className="searchbar">
-                        <input className="inputpromptbox" type="text" required placeholder="Write Your Prompt" />
+                        <input className="inputpromptbox" type="text" required placeholder="Write Your Prompt" value={input} onChange={changeinput}/>
                         <div className="selector">
                             <button className="dallebtn">Dall E</button>
                             <i class="fa-solid fa-chevron-down down"></i>
@@ -33,7 +47,7 @@ const GenerationsPage = () => {
                                     <li className="list_checkbox_li">4 <input type="radio" name="Radio" value="4" className="inp_check" /></li>
                                 </ul>
                             </div>
-                            <button className="generate_btn">Generate</button>
+                            <button className="generate_btn" onClick={redirect_dalle}>Generate</button>
                         </div>
                     </div>
                     <div className="promp">Prompt: A Football with Pink Background in the Space</div>
