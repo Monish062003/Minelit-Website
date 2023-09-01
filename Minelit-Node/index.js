@@ -20,31 +20,6 @@ mongoose.connect('mongodb+srv://Monish:mmonish875@minelit.vxryvsw.mongodb.net/Lo
     console.log(error)
 })
 
-let main=async()=>{
-
-    const transporter = nodemailer.createTransport({
-        host: 'smtp.ethereal.email',
-        port: 587,
-        auth: {
-            user: 'jordyn22@ethereal.email',
-            pass: 'HmME2Xvc6SGn6HpU4u'
-        }
-    });
-
-    // Define and send message inside transporter.sendEmail() and await info about send from promise:
-    let info = await transporter.sendMail({
-        from: '"Monish 👻" <mayekarmonish875@gmail.com>',
-        to: "monish.mayekar@somaiya.edu",
-        subject: "Yeahhh",
-        html: `
-        <b>Great it Working</b>
-        `,
-    });
-
-    console.log("Message sent: %s", info.messageId);
-}
-// main()
-
 const userSchema=new mongoose.Schema({
     email:{
         type:String

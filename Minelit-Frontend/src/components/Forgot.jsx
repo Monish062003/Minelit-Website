@@ -26,6 +26,7 @@ const Forgot = () => {
             alert("Email not Found")
         }
         else{
+
             let sendmail=await fetch("https://api.emailjs.com/api/v1.0/email/send",{
                     method:"POST",
                     headers:{
@@ -45,7 +46,7 @@ const Forgot = () => {
                 });
 
                 if (sendmail.status==200) {
-                    alert("Email Sent")
+                    window.location.href="/email"; 
                 }
             }
 
