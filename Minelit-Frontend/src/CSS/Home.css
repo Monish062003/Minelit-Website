@@ -1,0 +1,245 @@
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../Images/back.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.hero-sec {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 2%;
+}
+.hero-content {
+  width: 700px;
+  padding-left: 5%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.hero-title {
+  color: #fff;
+  font-size: 80px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 111.5%; /* 111.5px */
+}
+.hero-text {
+  font-size: 28px;
+  font-weight: 500;
+  opacity: 0.7;
+  color: #fff;
+}
+.hero-btn {
+  width: 250px;
+  height: 60px;
+  font-size: 25px;
+  flex-shrink: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #fff;
+  background: #214ea6;
+  font-weight: 600;
+  padding: 1%;
+}
+.hero-btn:hover {
+  color: #fff;
+}
+.home_search_div {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  padding: 1%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.home_search {
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #1e1d1d;
+  opacity: 0.14;
+  padding: 2%;
+  border-right: 0;
+}
+.home_search:focus{
+  outline: none !important;
+  border-right: none !important;
+}
+.fa-magnifying-glass {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 15px;
+  padding-right: 4%;
+  border: 2px solid rgba(30, 29, 29,0.14);
+  border-left: none;
+  color: rgba(30, 29, 29,0.8);
+}
+.fa-magnifying-glass:focus {
+  outline: none !important;
+}
+/* image display */
+.img_div_container {
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  padding: 1%;
+}
+.gallery_img{
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 1220px) {
+  .gallery_img{
+    width: 260px;
+    height: 260px;
+  }
+  .home_search_div {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero-content {
+    width: 500px;
+  }
+  .gallery_img{
+    width: 220px;
+    height: 220px;
+  }
+}
+@media screen and (max-width: 842px){
+  .image-gallery{
+    height: 140vh;
+  }
+  .gallery_img{
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-content {
+    height: 70%;
+  }
+  .hero-title {
+    font-size: 65px;
+  }
+  .hero-text {
+    font-size: 25px;
+  }
+  .hero-btn {
+    width: 230px;
+    height: 60px;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .hero-section {
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 580px) {
+  .gallery_img{
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 453px) {
+  .image-gallery{
+    height: 250vh;
+  }
+  .gallery_img{
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hero-sec {
+    justify-content: center;
+    width: 95%;
+    margin-bottom: 20%;
+    height: 80vh;
+  }
+  .hero-section {
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-content {
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 0;
+    height: 70%;
+  }
+  .hero-title {
+    text-align: center;
+  }
+  .hero-text {
+    text-align: center;
+    /* width: 95%; */
+  }
+  .image-gallery{
+    height: 300vh;
+  }
+  .gallery_img{
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero-title {
+    font-size: 50px;
+  }
+  .hero-text {
+    font-size: 22px;
+  }
+  .hero-btn {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+  }
+  .gallery_img{
+    width: 260px;
+    height: 260px;
+  }
+  .home_search_div{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .home_search_div{
+    width: 90%;
+  }
+}
