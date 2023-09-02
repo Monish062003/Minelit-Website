@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import '../CSS/Login-Signup.css';
 
 const Forgot = () => {
-
+    const link="";
     const [email,emailInput]=useState("");
     let onChangefields=((event)=>{
         emailInput(event.target.value);
@@ -26,7 +26,7 @@ const Forgot = () => {
             alert("Email not Found")
         }
         else{
-
+            link=`http://localhost:3000/reset?email=${email}`;
             let sendmail=await fetch("https://api.emailjs.com/api/v1.0/email/send",{
                     method:"POST",
                     headers:{
@@ -40,7 +40,7 @@ const Forgot = () => {
                             receiversname:"Customer",
                             receiversemail:`${email}`,
                             name: "Minelit Team",
-                            message: `http://localhost:3000/reset?email=${email}`
+                            message: `${link}`
                         }
                     }),
                 });

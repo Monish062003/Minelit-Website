@@ -1,5 +1,7 @@
 /Minelit-Frontend/node_modules
 
+/Minelit-Frontend/build
+
 /Minelit-Node/node_modules
 
-/Minelit-Frontend/build
+/Minelit-Node/.env
