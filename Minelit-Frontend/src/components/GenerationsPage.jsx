@@ -5,14 +5,15 @@ import img3 from '../Images/football.jpg'
 import Nav1 from "./Nav1";
 
 const GenerationsPage = () => {
-    const backend=require("../backend/dalle");
+    // const backend=require("../backend/ImageGenerationAPI's/dalle");
+    const backend=require("../backend/ImageGenerationAPI's/stable");
     const[input,newinput]=useState("");
     let redirect_dalle=(()=>{
+        let imagecount=document.querySelector('input[type="radio"]:checked').value;
+
         try {
-            let imagecount=document.querySelector('input[type="radio"]:checked').value;
-            backend.dalle(input,parseInt(imagecount));
-        }
-        catch{
+            backend(input,parseInt(imagecount));
+        } catch (error) {
             alert("Please select atleast 1 checkbox")
         }
     });

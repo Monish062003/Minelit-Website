@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const port= process.env.port || 80;
 const path=require("path");
 const routes=require("./routes/router").router;
-const BASE_URL=process.env.BASE_URL || "http://localhost:80";
+const BASE_URL=process.env.BASE_URL || "http://localhost:57887";
 
 app.use(express.urlencoded())
 app.set('view engine','pug')
