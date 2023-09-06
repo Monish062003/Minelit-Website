@@ -1,10 +1,10 @@
 const express=require("express");
 const app=express();
 const bodyParser = require('body-parser');
-const port= process.env.port || 80;
+const port= process.env.port || 80 || 57887;
 const path=require("path");
 const routes=require("./routes/router").router;
-const BASE_URL=process.env.BASE_URL || "http://localhost:57887";
+const BASE_URL=process.env.BASE_URL || `http://localhost:${port}`;
 
 app.use(express.urlencoded())
 app.set('view engine','pug')

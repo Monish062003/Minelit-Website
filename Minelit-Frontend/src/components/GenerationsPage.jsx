@@ -5,8 +5,8 @@ import img3 from '../Images/football.jpg'
 import Nav1 from "./Nav1";
 
 const GenerationsPage = () => {
-    // const backend=require("../backend/ImageGenerationAPI's/dalle");
-    const backend=require("../backend/ImageGenerationAPI's/stable");
+    const backend=require("../backend/ImageGenerationAPI's/dalle");
+    // const backend=require("../backend/ImageGenerationAPI's/stable");
     const[input,newinput]=useState("");
     let redirect_dalle=(()=>{
         let imagecount=document.querySelector('input[type="radio"]:checked').value;
